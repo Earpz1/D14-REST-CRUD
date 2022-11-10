@@ -33,12 +33,29 @@
     <!-- End Navigation bar -->
 
     <div class="container">
-      <div class="row"></div>
+      <div class="row">
+        <div class="card mt-5" style="width: 100%;">
+          <div class="row no-gutters">
+            <div class="col-4 mt-2 mb-2">
+              <img id="image" alt="..." style="width: 300px;" />
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p id="description" class="card-text"></p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script>
     window.onload = () => {
-      getData()
+      showDetails()
     }
   </script>
   <script src="js.js"></script>
